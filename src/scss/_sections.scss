@@ -1,0 +1,171 @@
+
+
+body{
+   background-color: #C2ABD4;
+   color: var(--color-lavanda700);
+}
+
+.titulo-seccion{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+// HEADER
+
+.header{
+    position: absolute;
+}
+
+// SECCION HERO
+.s-hero{
+    background: #774D98;
+    background: linear-gradient(344deg,rgba(119, 77, 152, 1) 0%, rgba(77, 50, 98, 1) 45%, rgba(40, 26, 51, 1) 100%);
+    padding-top: 120px;
+
+    .hero-text{
+        font-size: 39px;
+        font-weight: 700 ;
+        line-height: 1;
+        // font-family: "Playfair", serif;
+
+    }
+    .image-logo{
+        width: 80%;
+    }
+}
+
+.nav {
+    background-color: rgba(75, 47, 97, 0.9);
+    padding: 20px 40px;
+    width: 100%;
+    border-radius: 60px;
+    font-size: 18px;
+}
+
+// PROMO BANNER
+
+.s-promo{
+    background-color: var(--color-limon600);
+    padding: 15px;
+
+}
+
+// ABOUT US
+
+.s-about{
+    background-color: var(--color-lavanda50);
+    padding: 100px 0px;
+
+    .about-image{
+        background-color: var(--color-brisa100);
+        border-radius: 2000px;
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+// DIVIDER 1
+.divider1{
+    background-color: #ffff;
+}
+
+
+// SERVICES
+.s-services{
+    background-color: #fff;
+    padding: 100px 0px;
+
+    .service-card{
+
+        .icon{
+            margin-right: 20px;
+        }
+
+        .bubble{
+            width: 200px;
+            height: auto;
+        }
+    }
+
+}
+
+
+// DIVIDER 2
+.divider2{
+    background-color: var(--color-lavanda50);
+}
+
+// MAP
+.s-map{
+
+    background-color: var(--color-lavanda50);
+    padding: 100px 0px;
+    color: inherit;
+
+}
+
+// DIVIDER 3
+.divider3{
+    background-color: var(--color-limon50);
+}
+
+// CONTACT
+.s-contact{
+
+    background-color: var(--color-limon50);
+    padding: 100px 0px;
+    color: inherit;
+
+}
+
+// DIVIDER 4
+.divider4{
+    background-color: var(--color-menta50);
+}
+
+// TESTIMONIAL
+.s-testimonial{
+
+    background-color: var(--color-menta50);
+    padding: 100px 0px;
+   
+
+    .testimonial-card{
+        text-align: center;
+       
+
+        .box{
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0.5rem 1rem rgba(40, 9, 49, 0.15);
+
+            img{
+                position: relative;
+                bottom: 40px;
+                width: 100px;
+                height: auto;
+                border: 2px solid var(--color-limon600);
+                
+            }
+
+        }
+
+    }
+
+}
+
+// DIVIDER 5
+.divider5{
+    background-color: var(--color-lavanda800);
+}
+
+// FOOTER
+
+.s-footer{
+
+    background-color: var(--color-lavanda800);
+    padding: 100px 0px;
+
+}
