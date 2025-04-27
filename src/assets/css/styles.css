@@ -11920,6 +11920,10 @@ body {
   margin: 40px 0px;
 }
 
+section {
+  overflow: hidden;
+}
+
 .header {
   position: absolute;
 }
@@ -12000,9 +12004,8 @@ body {
 }
 .s-about .about-image {
   background-color: var(--color-brisa100);
-  border-radius: 2000px;
   width: 500px;
-  height: 500px;
+  height: auto;
 }
 
 .divider1 {
@@ -12014,12 +12017,21 @@ body {
   padding: 100px 0px;
 }
 .s-services .service-card img {
-  width: 500px;
+  width: 180px;
+  margin-bottom: 20px;
 }
 .s-services .service-card .text {
   margin-left: 20px;
 }
 
+@media (max-width: 575.98px) {
+  .s-services .service-card img {
+    width: 200px;
+  }
+  .s-services .service-card {
+    margin-bottom: 30px;
+  }
+}
 .divider2 {
   background-color: var(--color-lavanda50);
 }
