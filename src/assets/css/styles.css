@@ -11924,10 +11924,20 @@ body {
   position: absolute;
 }
 
+.nav {
+  background-color: rgba(75, 47, 97, 0.9);
+  padding: 20px 40px;
+  width: 100%;
+  border-radius: 60px;
+  font-size: 18px;
+}
+
 .s-hero {
   background: #774D98;
   background: linear-gradient(344deg, rgb(119, 77, 152) 0%, rgb(77, 50, 98) 45%, rgb(40, 26, 51) 100%);
   padding-top: 120px;
+  height: 75vh;
+  overflow: hidden;
 }
 .s-hero .hero-text {
   font-size: 39px;
@@ -11937,15 +11947,48 @@ body {
 .s-hero .image-logo {
   width: 80%;
 }
-
-.nav {
-  background-color: rgba(75, 47, 97, 0.9);
-  padding: 20px 40px;
-  width: 100%;
-  border-radius: 60px;
-  font-size: 18px;
+.s-hero .texto-hero {
+  position: absolute;
+  top: 16vh;
+  width: 30vw;
+}
+.s-hero .texto-hero .hero-quote-title {
+  font-size: 6vmin;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  line-height: 1;
+  color: #fff;
+}
+.s-hero .texto-hero .hero-quote-subtitle {
+  font-size: 3vmin;
+  font-weight: 300;
+  font-family: "Merriweather Sans", sans-serif;
+  font-style: normal;
+  color: #fff;
 }
 
+@media (max-width: 575.98px) {
+  .s-hero {
+    height: 62vh !important;
+    overflow: hidden;
+  }
+  .texto-hero {
+    top: 18vh !important;
+    width: 90vw !important;
+    position: relative;
+  }
+  .hero-quote-title {
+    font-size: 7vmin !important;
+  }
+  .hero-quote-subtitle {
+    font-size: 5vmin !important;
+  }
+  .hero-image img {
+    position: relative;
+    top: 24vh;
+  }
+}
 .s-promo {
   background-color: var(--color-limon600);
   padding: 15px;
@@ -11970,12 +12013,11 @@ body {
   background-color: #fff;
   padding: 100px 0px;
 }
-.s-services .service-card .icon {
-  margin-right: 20px;
+.s-services .service-card img {
+  width: 500px;
 }
-.s-services .service-card .bubble {
-  width: 200px;
-  height: auto;
+.s-services .service-card .text {
+  margin-left: 20px;
 }
 
 .divider2 {
@@ -12030,6 +12072,10 @@ body {
 .s-footer {
   background-color: var(--color-lavanda800);
   padding: 100px 0px;
+  color: #fff;
+}
+.s-footer .border-bottom {
+  border-color: var(--color-lavanda500) !important;
 }
 
 .work-sans-font {
@@ -12296,9 +12342,10 @@ body {
   color: var(--color-menta800) !important;
 }
 .btn-limon-solid {
-  background-color: var(--color-limon600);
-  border: 3px solid var(--color-limon600);
-  color: var(--color-lavanda700);
+  background-color: var(--color-limon500);
+  border: 3px solid var(--color-limon500);
+  color: var(--color-lavanda800);
+  font-weight: bold;
 }
 .btn-limon-solid:hover {
   background-color: var(--color-limon700);

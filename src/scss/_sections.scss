@@ -16,11 +16,23 @@ body{
     position: absolute;
 }
 
+.nav {
+    background-color: rgba(75, 47, 97, 0.9);
+    padding: 20px 40px;
+    width: 100%;
+    border-radius: 60px;
+    font-size: 18px;
+}
+
+
+
 // SECCION HERO
 .s-hero{
     background: #774D98;
     background: linear-gradient(344deg,rgba(119, 77, 152, 1) 0%, rgba(77, 50, 98, 1) 45%, rgba(40, 26, 51, 1) 100%);
     padding-top: 120px;
+    height: 75vh;
+    overflow: hidden;
 
     .hero-text{
         font-size: 39px;
@@ -32,15 +44,65 @@ body{
     .image-logo{
         width: 80%;
     }
+
+    .texto-hero {
+        position: absolute;
+        top: 16vh;
+        width: 30vw;
+
+        .hero-quote-title{
+            font-size: 6vmin;
+            font-weight: 600;
+            font-family: "Work Sans", sans-serif;
+            font-style: normal;
+            line-height: 1;
+            color: #fff;
+
+        }
+
+        .hero-quote-subtitle{
+            font-size: 3vmin;
+            font-weight: 300;
+            font-family: "Merriweather Sans", sans-serif;
+            font-style: normal;
+            color: #fff;
+        }
+    }
+
 }
 
-.nav {
-    background-color: rgba(75, 47, 97, 0.9);
-    padding: 20px 40px;
-    width: 100%;
-    border-radius: 60px;
-    font-size: 18px;
+// Clases para HERO  en dispositivos pequeños
+@media (max-width: 575.98px) { 
+
+    .s-hero{
+        height: 62vh!important;
+        overflow: hidden;
+    }
+
+    .texto-hero {
+        top: 18vh!important;
+        width: 90vw!important;
+        position: relative;
+    }
+
+    .hero-quote-title{
+        font-size: 7vmin!important;
+
+    }
+
+    .hero-quote-subtitle{
+        font-size: 5vmin!important;
+    }
+
+    .hero-image img{
+        position: relative;
+        top: 24vh;
+        
+    }
+
 }
+
+
 
 // PROMO BANNER
 
@@ -78,14 +140,16 @@ body{
 
     .service-card{
 
-        .icon{
-            margin-right: 20px;
+        img{ 
+            width: 500px;
         }
 
-        .bubble{
-            width: 200px;
-            height: auto;
+        .text{
+            margin-left: 20px;
         }
+
+
+
     }
 
 }
@@ -167,5 +231,11 @@ body{
 
     background-color: var(--color-lavanda800);
     padding: 100px 0px;
+    color: #fff;
+
+    .border-bottom{
+        border-color: var(--color-lavanda500) !important;
+        
+    }
 
 }

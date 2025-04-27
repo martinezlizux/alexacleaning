@@ -169,9 +169,10 @@
 
     &-limon-solid{
 
-        background-color: var(--color-limon600) ;
-        border: 3px solid var(--color-limon600);
-        color: var(--color-lavanda700);
+        background-color: var(--color-limon500) ;
+        border: 3px solid var(--color-limon500);
+        color: var(--color-lavanda800);
+        font-weight: bold;
 
         &:hover{
             background-color: var(--color-limon700) ;

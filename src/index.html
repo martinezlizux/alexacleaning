@@ -15,11 +15,14 @@
     <div class="sticky-lg-top  ">
         <div class="container-fluid position-absolute mt-2">
             <!-- HEADER -->
-            <div class="wrapper-nav container  col-8 ">
+            <div class="wrapper-nav container col-md-8 col-12 ">
                 <!-- Navbar -->
-                <div class="nav d-flex justify-content-between">
+                <div class="nav d-flex justify-content-between align-items-center">
                     <!-- logo -->
-                    <div class="logo"><span class="t-white"><strong>Alexa House Cleaning</strong></span></div>
+                    <div class="logo d-flex align-items-center">
+                        <img style="height: 40px; margin-right: 10px;" src="./assets/images/logo-small-circle.png" alt="">
+                        <span class="t-white"><strong>Alexa House Cleaning</strong></span>
+                    </div>
 
                     <!-- navpills -->
                     <div class="navegacion">
@@ -33,6 +36,7 @@
                         <span class="t-white me-4"><strong>(206)737-6307</strong></span>
                         <a href="" class="t-white me-4"><i class="fa-brands fa-square-facebook"></i></a>
                         <a href="" class="t-white me-4"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="" class="t-white me-4"><i class="fa-brands fa-square-youtube"></i></a>
                     </div>
                 </div>
 
@@ -46,17 +50,26 @@
         <div class="container">
             <!-- HERO CONTENT -->
             <div class="container">
-                <div class="wrapper-banner container col-8">
-                 <div class="content d-flex align-items-center ">
-                    <div class=" col hero-text t-white">
+                <div class="wrapper-banner container col-md-8 col-12">
+                 <div class=" d-none content d-flex   flex-column flex-lg-row align-items-center ">
+                    <div class=" col-12 col-md-6 hero-text t-white">
                         <p class="h1 ">Let’s make your home sparkle</p> <br>
                         <div class="btn btn-limon-solid me-2">Get a FREE Cuote</div>
                 
                     </div>
-                    <div class="col image-logo d-flex justify-content-around">
+                    <div class="col-12 col-md-6 image-logo d-flex justify-content-around">
                         <img src="./assets/images/woman.png" alt="">
                     </div>
 
+                 </div>
+
+                 <div class="hero-image d-flex flex-column">
+                    <img class=""  src="./assets/images/hero1.png" alt="">
+                    <div class="texto-hero ">
+                        <span class="hero-quote-title">Sparkling Spaces, <span>Exceptional</span> Service.</span>
+                        <p class="hero-quote-subtitle">From deep cleans to everyday shine — we’re your trusted cleaning experts.</p>
+                        <div class="btn btn-limon-solid me-2">Get a FREE Cuote</div>
+                    </div>
                  </div>
 
                 </div>
@@ -76,8 +89,8 @@
     <!-- ABOUT -->
     <section class="s-about">
         <div class="container">
-            <div class="d-flex justify-content-around">
-                <div class="about-content col-5 p-4">
+            <div class="d-flex justify-content-around d-flex   flex-column flex-lg-row">
+                <div class="about-content col-md-5 col-12 p-4-lg p-2">
                     <p class="t-h1 mb-4">About Us</p>
                     <span class="t-titulo ">🧽 Alexa House Cleaning</span> <br>
                     <span class="t-subtitulo">Your Trusted Cleaning Partner in Lynnwood, WA</span> <br>
@@ -87,7 +100,7 @@
                     <div class="btn btn-primary-solid">Contact Us</div>
                 </div>
 
-                <div class="about-image col-6 justify-content-center p-4">
+                <div class="about-image col-md-6 col-12 justify-content-center p-4">
                     <img src="" alt="">
                 </div>
 
@@ -103,26 +116,24 @@
     <!-- SERVICES -->
     <section class="s-services">
         <!-- titulo seccion -->
-        <div class="container col-7">
+        <div class="container col-12 col-sm-10 flex-column flex-lg-row align-items-center ">
                 <div class="titulo-seccion">
                     <p class="t-h1 mb-4">Services</p>
                     <span class="t-titulo ">🧼 Experience the Difference of a Truly Clean Space</span> <br>
                     <!-- <span class="t-subtitulo">Experience the Difference of a Truly Clean Space.</span> <br> -->
                     <p class="t-subtitulo">We offer a full range of professional cleaning services designed to fit your lifestyle and business needs.
                     </p>
+
+                    
                 </div>
         </div>
 
         <!-- contenido seccion -->
         <div class="container">
-            <div class="services-list d-flex flex-wrap">
-                <div class="service-card d-flex p-4 col-6 align-items-center">
-                    <div class="icon me-1">
-                        <div class="bubble">
-                            <svg class="shadow-1" width="163" height="148" viewBox="0 0 163 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4022 85.022C5.04034 81.2608 0 73.6035 0 64.769C0 57.4079 3.49937 50.864 8.92532 46.7103C7.35692 42.8036 6.49391 38.5377 6.49391 34.0702C6.49391 15.3224 21.692 0.12439 40.4397 0.12439C54.7324 0.12439 66.962 8.95759 71.9672 21.4627C73.0613 21.406 74.1628 21.3774 75.2711 21.3774C86.4825 21.3774 97.0086 24.3118 106.123 29.4546C110.847 19.4468 121.031 12.522 132.831 12.522C149.134 12.522 162.349 25.7377 162.349 42.0401C162.349 52.29 157.125 61.3197 149.194 66.6117C153.002 71.5828 155.265 77.8002 155.265 84.5462C155.265 99.0985 144.735 111.191 130.878 113.62C120.331 133.547 99.3868 147.124 75.2711 147.124C40.8044 147.124 12.8153 119.391 12.4022 85.022Z" fill="#77A5D5"/>
-                            </svg> 
-                        </div>
+            <div class="services-list d-flex flex-column flex-lg-row align-items-center flex-wrap">
+                <div class="service-card d-flex flex-column  flex-lg-row p-4  p-lg-4 col-12 col-md-6 align-items-center">
+                    <div class="icon me-1 ">
+                        <img class="bubble" src="./assets/images/service-icon-1.svg" alt="">
                     </div>
                     <div class="text">
                         <span class="h4 work-sans-font"> <strong>House Cleaning Services</strong></span><br>
@@ -130,13 +141,9 @@
                         <p class="t-body-regular mt-2">Our regular house cleaning services are designed to maintain a clean and healthy environment. We take care of dusting, vacuuming, mopping, and sanitizing to keep every corner of your home sparkling.</p>
                     </div>
                 </div>
-                <div class="service-card d-flex p-4 col-6 align-items-center">
-                    <div class="icon me-1">
-                        <div class="bubble shadow-1">
-                            <svg class="" width="163" height="148" viewBox="0 0 163 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4022 85.022C5.04034 81.2608 0 73.6035 0 64.769C0 57.4079 3.49937 50.864 8.92532 46.7103C7.35692 42.8036 6.49391 38.5377 6.49391 34.0702C6.49391 15.3224 21.692 0.12439 40.4397 0.12439C54.7324 0.12439 66.962 8.95759 71.9672 21.4627C73.0613 21.406 74.1628 21.3774 75.2711 21.3774C86.4825 21.3774 97.0086 24.3118 106.123 29.4546C110.847 19.4468 121.031 12.522 132.831 12.522C149.134 12.522 162.349 25.7377 162.349 42.0401C162.349 52.29 157.125 61.3197 149.194 66.6117C153.002 71.5828 155.265 77.8002 155.265 84.5462C155.265 99.0985 144.735 111.191 130.878 113.62C120.331 133.547 99.3868 147.124 75.2711 147.124C40.8044 147.124 12.8153 119.391 12.4022 85.022Z" fill="#77A5D5"/>
-                            </svg> 
-                        </div>
+                <div class="service-card d-flex flex-column  flex-lg-row p-4  p-lg-4 col-12 col-md-6 align-items-center">
+                    <div class="icon me-1 ">
+                        <img class="bubble" src="./assets/images/service-icon-2.svg" alt="">
                     </div>
                     <div class="text">
                         <span class="h4 work-sans-font"><strong>Maid Services</strong></span><br>
@@ -144,13 +151,9 @@
                         <p class="t-body-regular mt-2">Our professional maids provide efficient and detailed cleaning support, tailored to your schedule. Whether it’s weekly, bi-weekly, or monthly, we help keep your home organized and stress-free.</p>
                     </div>
                 </div>
-                <div class="service-card d-flex p-4 col-6 align-items-center">
-                    <div class="icon me-1">
-                        <div class="bubble">
-                            <svg class="shadow-1" width="163" height="148" viewBox="0 0 163 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4022 85.022C5.04034 81.2608 0 73.6035 0 64.769C0 57.4079 3.49937 50.864 8.92532 46.7103C7.35692 42.8036 6.49391 38.5377 6.49391 34.0702C6.49391 15.3224 21.692 0.12439 40.4397 0.12439C54.7324 0.12439 66.962 8.95759 71.9672 21.4627C73.0613 21.406 74.1628 21.3774 75.2711 21.3774C86.4825 21.3774 97.0086 24.3118 106.123 29.4546C110.847 19.4468 121.031 12.522 132.831 12.522C149.134 12.522 162.349 25.7377 162.349 42.0401C162.349 52.29 157.125 61.3197 149.194 66.6117C153.002 71.5828 155.265 77.8002 155.265 84.5462C155.265 99.0985 144.735 111.191 130.878 113.62C120.331 133.547 99.3868 147.124 75.2711 147.124C40.8044 147.124 12.8153 119.391 12.4022 85.022Z" fill="#77A5D5"/>
-                            </svg> 
-                        </div>
+                <div class="service-card d-flex flex-column  flex-lg-row p-4  p-lg-4 col-12 col-md-6 align-items-center">
+                    <div class="icon me-1 ">
+                        <img class="bubble" src="./assets/images/service-icon-3.svg" alt="">
                     </div>
                     <div class="text">
                         <span class="h4 work-sans-font"><strong>Deep Cleaning</strong></span><br>
@@ -158,13 +161,9 @@
                         <p class="t-body-regular mt-2">Perfect for seasonal cleanings, move-ins, or move-outs, our deep cleaning service targets every nook and cranny. We go beyond the surface to leave your home spotless and rejuvenated.</p>
                     </div>
                 </div>
-                <div class="service-card d-flex p-4 col-6 align-items-center">
-                    <div class="icon me-1">
-                        <div class="bubble">
-                            <svg class="shadow-1" width="163" height="148" viewBox="0 0 163 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4022 85.022C5.04034 81.2608 0 73.6035 0 64.769C0 57.4079 3.49937 50.864 8.92532 46.7103C7.35692 42.8036 6.49391 38.5377 6.49391 34.0702C6.49391 15.3224 21.692 0.12439 40.4397 0.12439C54.7324 0.12439 66.962 8.95759 71.9672 21.4627C73.0613 21.406 74.1628 21.3774 75.2711 21.3774C86.4825 21.3774 97.0086 24.3118 106.123 29.4546C110.847 19.4468 121.031 12.522 132.831 12.522C149.134 12.522 162.349 25.7377 162.349 42.0401C162.349 52.29 157.125 61.3197 149.194 66.6117C153.002 71.5828 155.265 77.8002 155.265 84.5462C155.265 99.0985 144.735 111.191 130.878 113.62C120.331 133.547 99.3868 147.124 75.2711 147.124C40.8044 147.124 12.8153 119.391 12.4022 85.022Z" fill="#77A5D5"/>
-                            </svg> 
-                        </div>
+                <div class="service-card d-flex flex-column  flex-lg-row p-4  p-lg-4 col-12 col-md-6 align-items-center">
+                    <div class="icon me-1 ">
+                        <img class="bubble" src="./assets/images/service-icon-4.svg" alt="">
                     </div>
                     <div class="text">
                         <span class="h4 work-sans-font"><strong>Janitorial Services</strong></span><br>
@@ -322,8 +321,48 @@
         <img class="img-fluid w-100" src="./assets/images/divider5.svg" alt="">
     </div>
 
+    <!-- FAQ -->
+
+    <section class="s-faq">
+
+    </section>
+
+
     <!-- FOOTER -->
     <section class="s-footer">
+        <div class="container border-bottom ">
+            <div class="d-flex col-12 flex-row  align-items-start  justify-content-between">
+                <!-- Contacto -->
+                <div class="p-4">
+                    <p class=""><strong>Alexa House Cleaning</strong></p>
+                    <div class="d-flex flex-column">
+                        <div class="">Tel: </div>
+                        <div class="">Email: </div>
+                        <div class="">Lynnwood WA </div>
+                    </div>
+                </div>
+
+
+                <!-- Social Media -->
+                <div class="p-4">
+                    <p class=""><strong>Social Media</strong></p>
+                    <div class="d-flex flex-column">
+                        <div class="">Facebook</div>
+                        <div class="">Instagram</div>
+                        <div class="">Youtube</div>
+                    </div>
+                </div>
+
+                <div class="footer-draw">
+                    <img class="img-fluid w-100" src="./assets/images/footer-draw.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="p-4">Designer by Liz Martinez - <a href="http://www.holaliz.com">Holaliz.com</a></p>
+        </div>
 
     </section>
 
