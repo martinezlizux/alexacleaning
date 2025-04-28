@@ -237,27 +237,31 @@
                 <!-- Formulario -->
                 <div class="col-lg-6 col-12 p-4">
                     <div class="box-white My-Form shadow">
-                        <form action="https://formspree.io/f/xyzwkyya" method="POST">
+                        <form action="send_email.php" method="POST">
                             <div class="mb-3">
                                 <label for="InputName" class="form-label">Name</label>
                                 <input type="text" name="Name" class="form-control" id="InputName" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <label for="InputLastName" class="form-label">Last Name</label>
-                                <input type="text" name="last name" class="form-control" id="InputLastName" aria-describedby="emailHelp">
+                                <input type="text" name="Last_name" class="form-control" id="InputLastName" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <label for="InputEmail" class="form-label">Email address</label>
-                                <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" >
+                                <input type="email" name="Email" class="form-control" id="InputEmail" aria-describedby="emailHelp" >
                             </div>
                             <div class="mb-3">
                                 <label for="InputMsg" class="form-label">Message</label>
-                                <textarea class="form-control" name="message" id="InputMsg" placeholder="Your Message" rows="3"></textarea>
+                                <textarea class="form-control" name="Message" id="InputMsg" placeholder="Your Message" rows="3"></textarea>
 
                             </div>
                             
                             <button type="submit" class="btn btn-lg  btn-primary">Submit</button>
                         </form>
+
+                        <div id="thankYouMessage" style="display:none; margin-top:20px;">
+                            <h3>Thank you! Your message has been sent.</h3>
+                        </div>
 
 
                     </div>
