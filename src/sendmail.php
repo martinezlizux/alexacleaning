@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $email_content, $headers)) {
         echo "success";
     } else {
-        echo "error";
+        echo "error sending mail"; // <-- aquí verás si es error de envío
     }
 } else {
-    echo "invalid";
+    echo "invalid method"; // <-- aquí verás si es error de método
 }
 ?>
 
