@@ -12002,10 +12002,8 @@ section {
   background-color: var(--color-lavanda50);
   padding: 100px 0px;
 }
-.s-about .about-image {
-  background-color: var(--color-brisa100);
-  width: 500px;
-  height: auto;
+.s-about .about-image img {
+  border-radius: 10px;
 }
 
 .divider1 {

@@ -122,9 +122,14 @@ section{
     padding: 100px 0px;
 
     .about-image{
-        background-color: var(--color-brisa100);
-        width: 500px;
-        height: auto;
+        // background-color: var(--color-brisa100);
+        // width: 500px;
+
+       img {
+        border-radius: 10px;
+        
+       }
+        
     }
 
 }
